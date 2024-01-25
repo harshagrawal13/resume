@@ -1,0 +1,147 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+\geometry{left=1.5cm,right=10cm,marginparwidth=7.7cm,marginparsep=0.8cm,top=1.25cm,bottom=1.25cm}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=black,
+}
+
+\usepackage[official]{eurosym}
+
+
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+%bullets & rating marker
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Harsh Agrawal}
+\tagline{<bits + proteins>}
+% Add Profile Picture here
+% \photo{3.3cm}{profile.jpg}
+
+\personalinfo{
+    \homepage{atom51.com}
+    \email{harshagrawal.1312@gmail.com}
+    \linkedin{linkedin.com/in/harshag1312/}
+    \github{github.com/harshagrawal13/}
+}
+
+\skillsinfo{
+    \code{Torch > JAX > Tensorflow}
+}
+\begin{fullwidth}
+    \makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\footnotesize}
+
+
+\marginpar{
+    \bigskip%
+    \vspace*{
+        \dimexpr1pt-\baselineskip
+    }
+    \raggedright{
+        \cvsection{Research}
+        \cvevent{\textbf{JESPR} - Energy Based Modelling for Proteins}{}{  May 2023 - Present}{}
+        \begin{itemize}
+            \item Devised and currently \textit{implementing} a contrastive learning approach for the pre-training of foundational protein models, aimed at learning high-level semantic representations between sequence and structural spaces to facilitate bi-directional mapping.
+            \item Also implemented sharding, activation checkpointing, and other memory-saving techniques for scalable multi-GPU training of models with 500M+ parameters.
+            \item Currently evaluating zero-shot performance on protein function benchmarks such as solubility, stability, etc. (from https://arxiv.org/abs/2206.02096). 
+            \item Code: \href{https://github.com/atom-51/jespr}{github.com/atom-51/jespr}
+        \end{itemize}
+        
+        \divider
+        
+        \cvevent{\textbf{Cancer-eX} - Detecting Pancreatic Cancer early}{}{Aug 2018 - August 2021}{}
+        \begin{itemize}
+            \item Studied a salivary biomarker to detect Pancreatic and other Gastrointestinal Cancers early and proposed a lateral flow assay-based system for early detection. 
+            \item Designed and calibrated a competitive ELISA protocol from scratch. \textit{(The outcome was partially successful)}
+            \item Also Designed a simple Risk-assessment tool for Pancreatic Cancer using etiological risk factors by factoring their respective relative-risk (RR) values obtained via independent studies.
+        \end{itemize}
+
+        \cvsection{Achievements}
+        \begin{itemize}
+            \cvitem{{Rise Global Winner 2021}}{July 2022}{Selected as one of the 100 global winners by the Rhodes Trust and Schmidt Futures. A post-secondary academic scholarship and an invitation to a residential summit were provided.},
+            
+            \cvitem{{Bal Shakti Puraskar Recipient 2020}}{Jan 2020}{Highest honor bestowed to an Indian below 18 by the \textbf{President of India} at the President's House.}
+            
+            \cvitem{Global Teen Leader 2020}{Jan 2020}{Selected as one of the 35 teens all around the world by Three Dot Dash to participate at the Virtual Just Peace Summit 2020.}
+
+            \cvitem{Gold Medal, Genius Olympiad}{June 2020}{Won gold medal in the category of sciences at one of the largest high-school interdisciplinary competitions. It witnessed participation from ~1600 exhibits from ~80 countries.}
+
+            \cvitem{Regeneron ISEF Finalist}{May 2020}{Qualified as one of the 20 team India finalists for ISEF 2020. The competition was canceled due to the pandemic.}
+
+            \cvitem{Regional Finalist, Google Science Fair}{May 2019}{Selected as one of the top 100 exhibits all around the world at the Google Science Fair.}
+
+            \cvitem{Third Award, Spark Teen Accelerator Program}{June 2020}{Won third award globally (+ USD 1500) for CANCER-EX along with acceptance to their accelerator program.}
+
+            \cvitem{Grand Award at IRIS Nationals}{Jan 2020}{Granted in the category of biochemistry at the biggest science fair in the country.}
+
+            \cvitem{CSIR Innovation Award}{Oct 2020}{Highest research honor bestowed to an Indian under 18 by the Science & Technology Minister of India.}
+
+        \end{itemize}
+
+    }
+}
+
+\cvsection{Education}
+
+\cvevent{Masters in Engineering}{Imperial College London}{October 2022 - Present}{}
+\begin{itemize}
+    \item Pursuing a combined Bachelors + Masters (4 years) degree in Molecular Bioengineering.
+    \item The tuition/living expenses are entirely covered by the RISE scholarship.
+    \item Recipient of the Department Scholarship of 1000 GBP per year.
+\end{itemize}
+\divider
+\cvevent{High School Dimploma}{Bharatiya Vidya Bhavans, Raipur}{April 2013 - May 2021}{}
+\begin{itemize}
+    \item 12th Grade: 96\%
+    \item Subjects: English (99/100), Math (98/100), Biology (91/100), Physics (97/100), Chemistry (92/100), and Computer Science (99/100).
+\end{itemize}
+
+\cvsection{Experience}
+\cvevent{Lead Data Scientist}{Paraswap.io}{May 2021 - June 2022}{}
+\begin{itemize}
+    \item {Paraswap is the second largest multi-chain Decentralized Exchange aggregator for crypto-currencies. I worked as their lead data scientist primarily responsible for developing a public dashboard to aggregate Paraswap's statistics such as Users, Volume, and Fees along with other tasks.}
+    \item {The Dashboard indexes ~\$100M in daily volume across 6 blockchains and >\$55B in total volume. Public Dashboard: \href{https://www.paraswap.io/dashboard}{paraswap.io/dashboard}}
+    \item {Also developed multiple private dashboards to simulate blockchain transactions, used to make crucial decisions.}
+\end{itemize}
+\divider
+\cvevent{Hackathon - The Gawler Challenge}{MineNow}{Apr 2020 - Jul 2020}{}
+\begin{itemize}
+    \item The Gawler Challenge was a global online competition from the Government of South Australia to find mineralization using Machine Learning.
+    \item Created three separate machine learning models to predict novel mineralized sites in the Gawler region of South Australia using the existing geo-physical and geo-chemical data-sets. A total of ~300,000 new mineralized points were predicted along with their size and predicted ore/mineral.
+    \item Code: \href{https://github.com/harshagrawal13/Gawler-Unearthed}{github.com/harshagrawal13/Gawler-Unearthed}
+\end{itemize}
+\divider
+\cvevent{Founder; Charter President}{Interact Club of Raipur Pinnacle by Rotary}{Jun 2019 - June 2020}{}
+\begin{itemize}
+    \item {Interact Club of Raipur Pinnacle was founded, under Rotary International, as a means to conduct socio-economic upliftment activities. For the term 2019-2020, we fund-raised ~1500 USD; provided hot and healthy food to 800 locals; distributed clothes and other goods to specially-abled kids alongside conducting a few other activities.}
+    \item {For the same, we were recognized with the Platinum Distinction Certification - the highest distinction awarded to a member club by Rotary International.}
+\end{itemize}
+\divider
+
+\cvevent{President of Indian Chapter}{Elevate the Future}{Apr 2020 - Oct 2020}{}
+\begin{itemize}
+    \item We organized a two 4-day virtual workshops to teach fundamental and high-level entrepreneurship to ~200 middle and high school students from all across the country.
+\end{itemize}
+
+\clearpage
+% Anything that I add after this page goes to the next page
+\end{document}
